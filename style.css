@@ -11,7 +11,7 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px; /* Added padding for better responsiveness */
+    padding: 0 20px; 
 }
 
 /* Navigation Bar */
@@ -33,12 +33,12 @@ body {
 }
 
 .navigation a {
-    color: white; /* White on a light background isn't legible */
-    color: #333; /* Changed to a darker color */
+    color: white; 
+    color: #333; 
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    transition: color 0.3s, text-decoration 0.3s; /* Smooth hover effect */
+    transition: color 0.3s, text-decoration 0.3s; 
 }
 
 .navigation a:hover {
@@ -98,7 +98,7 @@ section {
 
 }
 
-/* Card Component */
+
 .card {
     background: white;
     padding: 15px;
@@ -119,7 +119,7 @@ section {
     color: #333;
 }
 
-/* Footer */
+
 .footer {
     background-color: #333;
     color: white;
@@ -131,7 +131,6 @@ section {
     margin: 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .navigation ul {
         flex-direction: column;
@@ -161,9 +160,9 @@ p {
 
 a {
     color: white;
-    text-decoration: none; /* Optional: removes underline */
+    text-decoration: none; 
 }
 
 a:hover {
-    color: lightgray; /* Optional: changes link color on hover */
+    color: lightgray; 
 }
