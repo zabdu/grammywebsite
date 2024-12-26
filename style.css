@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E0B37;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding for better responsiveness */
+}
+
+/* Navigation Bar */
+.navigation {
+    background-color: #A96F52;
+    padding: 15px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: white; /* White on a light background isn't legible */
+    color: #333; /* Changed to a darker color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth hover effect */
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: #6a0dad;
+}
+
+/* Hero Section */
+.home {
+    background: url('images/grammys-banner.jpg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.home h4 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about,
+.nominations,
+.awards,
+.articles {
+    background: white;
+    margin: 80px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.about h2,
+.nominations h2,
+.awards h2,
+.articles h2 {
+    color: #6a0dad;
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+
+
+}
+
+/* Card Component */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home {
+        height: 200px;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home h4 {
+        font-size: 1rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none; /* Optional: removes underline */
+}
+
+a:hover {
+    color: lightgray; /* Optional: changes link color on hover */
+}
